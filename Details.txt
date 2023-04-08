@@ -1,0 +1,49 @@
+Topics:
+
+  Context-API
+    What is context, provide, createContext
+    Avoid props drilling
+
+    Changing the value of a context
+
+    Context in React
+    Simple light/dark theme design with help of Context
+
+      Provider:
+        Wrapp the component  with provider,value , that requires the context value
+      
+      Consumer:
+        use the context value in child component by doing,
+          Wrap the Consumer
+          or 
+          useContext hook
+
+      Advantage:
+        To Avoid Props Drilling
+        To Set a proper context for the app ( theme-mode(light/dark), language, user-type )
+
+      Disadvantage:
+        Context are not generally intended change often like state value
+        because it will cause the entire DOM to re-render
+
+        Note: if You want state value like and use it across the application we need to go for useReducer/third party library
+
+  Design the Dashboard APP:
+
+    Step1:
+      Design the basic Layout First
+      Sidebar, AppBar, Base Bg Color
+
+    Component Design:
+      Identify the Commanalities in the application and put them together as one component
+
+    MUI Components & Hooks:
+      useTheme
+
+Next Session:
+  Grid System in MUI
+  2. Breakpoints with mui
+    Format Form, border with primary
+    Increase font-size
+  
+  tic tac toe with few other hooks in react
